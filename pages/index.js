@@ -1,65 +1,72 @@
+import React from 'react'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import '../styles/styles.css'
+import { motion } from 'framer-motion'
+import Link from 'next/link'
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+import Header from '../components/header'
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+const index = () => {
+	return (
+		<React.Fragment>
+			<Head>
+				<title>Pizza box</title>
+			</Head>
+			<div className="container">
+				<Header />  
+				<div className="contenido">
+					<div className="info">
+						<h1>Lorem ipsum dolor sit amet, consectetur</h1>
+						<div className="name">Pizza box</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+							aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+							urna.
+						</p>
+						<div className="price">$15.98</div>
+						<motion.button
+							whileHover={{ scale: 1.1 }}
+							whileTap={{ scale: 0.9 }}
+						>
+							<img src="/img/basket-white.svg" alt="" />
+							<span>Añadir al carrito</span>
+						</motion.button>
+					</div>
+					<div className="img-container">
+						<img src="/img/pizza.jpg" alt="pizza" />
+					</div>
+					<div className="social-buttons">
+						<div className="links">
+							<a href="" target="_blank">
+								Instagram
+							</a>
+							<a href="" target="_blank">
+								Facebook
+							</a>
+						</div>
+						<div className="btns">
+							<motion.button
+								whileHover={{ scale: 1.1 }}
+								whileTap={{ scale: 0.9 }}
+								className="btn-l"
+							>
+								<img src="/img/arrow-l.svg" alt="" />
+							</motion.button>
+							<motion.button
+								whileHover={{ scale: 1.1 }}
+								whileTap={{ scale: 0.9 }}
+								className="btn-r"
+							>
+								<img src="/img/arrow-r.svg" alt="" />
+							</motion.button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</React.Fragment>
+	)
 }
+
+export default index
