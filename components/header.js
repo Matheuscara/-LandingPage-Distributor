@@ -9,10 +9,10 @@ const Header = () => {
       <header>
         <img src="/img/logo.png" alt="logo" />
         <ul>
-          <li>Productos</li>
-          <li>Sobre nosotros</li>
+          <li>Produtos</li>
+          <li>Sobre nós</li>
           <li>Videos</li>
-          <li>Donde comprar</li>
+          <li>Onde Comprar</li>
         </ul>
         <Link href='https://www.ifood.com.br/delivery/jatai-go/minus-distribuidora-setor-colinas/39295f24-43f0-45f6-92c9-17b187069845?UTM_Medium=share'>
           <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>

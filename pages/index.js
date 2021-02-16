@@ -18,20 +18,18 @@ const index = () => {
 				<Header />  
 				<div className="contenido">
 					<div className="info">
-						<h1>Lorem ipsum dolor sit amet, consectetur</h1>
+						<h1>Dinheiro não compra felicidade, mas compra pizza que é a mesma coisa!</h1>
 						<div className="name">Pizza box</div>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-							aliquam, purus sit amet luctus venenatis, lectus magna fringilla
-							urna.
+						Pizza Box é uma cadeia de restaurantes e franquias especializada em pizzas e massas. Com sede na cidade de Plano, no Texas, a Pizza Box é a maior cadeia de pizzarias do mundo, com quase 15 mil restaurantes e quiosques em mais de 130 países.
 						</p>
-						<div className="price">$15.98</div>
+						<div className="price">R$25.98</div>
 						<motion.button
 							whileHover={{ scale: 1.1 }}
 							whileTap={{ scale: 0.9 }}
 						>
 							<img src="/img/basket-white.svg" alt="" />
-							<span>Añadir al carrito</span>
+							<span>Iniciar Pedido</span>
 						</motion.button>
 					</div>
 					<div className="img-container">
